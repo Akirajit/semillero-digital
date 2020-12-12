@@ -108,3 +108,15 @@ width: 150px;
     color: #2867B2;  
 }
 
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        height: 140px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main h2 {
+        font-size: 40px;
+        }
+}
+
