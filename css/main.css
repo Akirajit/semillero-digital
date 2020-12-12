@@ -1,5 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 body {
     font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    border-bottom: 2px solid orange;
+}
+
+
+#header {
+    padding: 0 50px;
+    background-color: #eaeaea !important;
 }
 
 #header img {
@@ -27,8 +44,10 @@ width: 150px;
     background-image: url(../img/virreyes.jpeg);
     padding: 20vh 0;
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
-    height: 70vh;
+    height: 85vh;
+
 }
 
 .main > * {
@@ -45,13 +64,40 @@ width: 150px;
 #footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid red;
+    height: 70px;
+    padding: 0 50px;
+    padding-top: 20px;
+    background-color: silver;
+    font-weight: bold;
+
 }
 
 #footer ul {
     display: flex;
     flex-direction: row;
+}
+
+#footer ul li{
+    margin-left: 30px;
+    font-size: 2.2rem;  
+}
+
+#footer ul li a{
+    color: black;
+}
+
+#whatsapp:hover {
+    color: #29a737;
+}
+
+#facebook:hover {
+    color: #4267B2;
+}
+
+#instagram:hover {
+  color: #C13584;  
 }
 
