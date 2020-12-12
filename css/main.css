@@ -9,9 +9,9 @@ body {
     font-size: 1rem;
 }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+/* .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     border-bottom: 2px solid orange;
-}
+} */
 
 
 #header {
@@ -98,5 +98,13 @@ width: 150px;
 
 #instagram:hover {
   color: #C13584;  
+}
+
+#youtube:hover {
+    color:#FF0000;  
+}
+
+#linkedin:hover {
+    color: #2867B2;  
 }
 
