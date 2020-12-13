@@ -1,9 +1,12 @@
-@font-face {
+/* @font-face {
     font-family: 'Prototype';
     font-style: normal;
     font-weight: normal;
     src: local('Prototype'), url('Prototype.woff') format('woff');
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
 
 * {
     margin: 0;
@@ -21,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Prototype';
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -47,8 +50,10 @@ ul li a {
 } */
 
 .navbar-toggler-icon {
-    background-color: #c4c4c4;
+    background-color: #ffffff;
     color: black;
+    border-radius: 50%;
+    background-image: url(../img/hoja.png);
 }
 
 
@@ -266,6 +271,7 @@ ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     grid-gap: 30px;
+    margin-bottom: 180px;
     /* border: 1px solid green; */
 }
 
@@ -344,6 +350,7 @@ ul li a {
     /* BLOG */
     #blog {
         margin: 0; 
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         /* border: 1px solid green; */
     }
     .blog-article {
