@@ -263,50 +263,66 @@ ul li a {
 /* BLOG */
 #blog {
     margin: 2rem; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-gap: 30px;
     /* border: 1px solid green; */
 }
 
-.blog-article {
-    margin: 2rem;
-    /* border: 1px solid red; */
-    background-color: rgb(200, 241, 255);
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding: 2rem;
-    background-image: url("../img/seeds.jpg");
-    color: white;
+#blog-title {
+   margin-top: 2rem; 
+   text-align: center;
+   font-weight: bold;
 }
 
 
-.blog-article img {
-    width: 400px;
+.blog-article {
+    margin: 2rem;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    padding: 2rem;
+
+}
+
+.orange {
+   border: 5px solid #FFB300;
+}
+
+.blue {
+    border: 5px solid #00AAE4;
+}
+
+.green {
+   border: 5px solid #a5df2a;
 }
 
 .blog-article-title {
     font-weight: bold;
     font-size: 2rem;
+    margin-bottom:2rem;
 }
 
-.blog-article-text h4 {
+.blog-article-subtitle {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.blog-article-text P  {
+.blog-article-text {
     margin-bottom: 3rem;
 }
 
 .blog-article-btn {
-    background-color: #c4c4c4;
+    background-color: #00AAE4;
     border-radius: 5px;
     padding: 1rem;
     color: black;
     text-decoration: none;
+
 }
 
 .blog-article-btn:hover {
-    color:#f5501b;
+    color:white;
     text-decoration: none;
     
 }
