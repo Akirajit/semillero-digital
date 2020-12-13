@@ -179,7 +179,6 @@ width: 150px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 2rem;
-   
 }
 
 
@@ -213,6 +212,7 @@ width: 150px;
 .blog-article-btn:hover {
     color:#f5501b;
     text-decoration: none;
+    
 }
 /* BLOG */
 
@@ -235,6 +235,10 @@ width: 150px;
     #blog {
         margin: 0; 
         /* border: 1px solid green; */
+    }
+    .blog-article {
+        margin: 2rem 0;
+        border-radius: 25px;
     }
     /* /BLOG */
 }
