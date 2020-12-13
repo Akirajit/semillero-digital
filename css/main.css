@@ -1,40 +1,52 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-}
-
 @font-face {
     font-family: 'Prototype';
     font-style: normal;
     font-weight: normal;
     src: local('Prototype'), url('Prototype.woff') format('woff');
-    }
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-h1,h2,h3,h4,h5,h6{
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Prototype';
 }
 
+header {
+    background-color: #c4c4c4;
+}
 
-
-ul li a{
+ul li a {
     color: black;
     font-weight: bold;
 }
 
-ul li a:hover{
-    color: #f5501b;
+.navbar-nav li a:hover {
+    color: #f5501b !important;
 }
-.navbar-toggler{
+
+.dropdown-menu{
+    background-color: #c4c4c4;
+    color: black;
+    font-weight: bold;
+}
+/* .navbar-toggler {
     background-color: white;
-}
-.navbar-toggler-icon{
+} */
+
+.navbar-toggler-icon {
     background-color: #c4c4c4;
     color: black;
 }
@@ -42,11 +54,11 @@ ul li a:hover{
 
 #header {
     padding: 0 50px;
-    background-color: #c4c4c4; 
+    background-color: #c4c4c4;
 }
 
 #header img {
-width: 150px;
+    width: 150px;
 }
 
 
@@ -62,6 +74,7 @@ width: 150px;
     left: 0;
     opacity: 0.8;
 }
+
 .main {
     position: relative;
     background-image: url(../img/virreyes.jpeg);
@@ -73,7 +86,7 @@ width: 150px;
 
 }
 
-.main > * {
+.main>* {
     z-index: 1;
     position: relative;
 }
@@ -82,18 +95,15 @@ width: 150px;
     color: white;
     font-size: 60px;
     letter-spacing: 5px;
-    font-family: 'Nunito', sans-serif;
 }
-
 #footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 70px;
     padding: 0 50px;
     padding-top: 20px;
-    background-color: #c4c4c4;
+    background-color: silver;
     font-weight: bold;
 
 }
@@ -103,12 +113,13 @@ width: 150px;
     flex-direction: row;
 }
 
-#footer ul li{
+#footer ul li {
     margin-left: 30px;
-    font-size: 1.7rem;  
+    font-size: 1.7rem;
+    list-style: none;
 }
 
-#footer ul li a{
+#footer ul li a {
     color: black;
 }
 
@@ -121,22 +132,21 @@ width: 150px;
 }
 
 #instagram:hover {
-  color: #C13584;  
+    color: #C13584;
 }
 
 #youtube:hover {
-    color:#FF0000;  
+    color: #FF0000;
 }
 
 #linkedin:hover {
-    color: #2867B2;  
+    color: #2867B2;
 }
 
 
 
 
-
-/* QUIENES SOMOS */
+/*  QUIENES SOMOS */
 .nosotros__textos {
     margin: 80px 0;
 }
@@ -145,26 +155,110 @@ width: 150px;
     width: 500px;
 }
 
-.queHacemos{
+.queHacemos {
     margin: 100px 0;
 }
+
 .queHacemos__textos {
     text-align: center;
 }
-.queHacemos__textos h2{
+
+.queHacemos__textos h2 {
     font-size: 60px;
     letter-spacing: 10px;
 }
 
-.queHacemos__textos p{
+.queHacemos__textos p {
     font-size: 40px;
 }
 
-.objetivo__imagen{
+.objetivo__imagen {
     width: 500px;
 }
-/*  QUIENES SOMOS  */
 
+/* QUIENES SOMOS */
+
+/* CAPACITATE */
+.cursos__columna{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cursos__titulo{
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 30px 0 ;
+}
+.curso_instagram{
+    width: 200px;
+}
+.curso_mercadolibre{
+    width: 200px;
+    margin: 10px;
+}
+
+.cursos__boton{
+    background-color: #a5df2a;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.cursos__fondo{
+    background-color: #27AEFD;
+    border: 5px solid #27AEFD;
+    border-radius: 30px 0px 30px 0px;
+    padding: 30px;
+}
+/* CAPACITATE */
+
+/*VENI A SEMBRAR */
+.veniAsembrar p {
+    font-size: 20px;
+}
+
+.veniAsembrar__verde {
+    background-color: #a5df2a;
+    padding: 15px;
+}
+
+.veniAsembrar__azul {
+    background-color: #27AEFD;
+    padding: 20px;
+}
+
+.veniAsembrar__titulo {
+    margin: 50px 0;
+}
+
+.staff__titulo {
+    margin: 70px 0;
+}
+
+.card-deck {
+    padding: 10px 0;
+}
+
+.card-body {
+    padding: 0px;
+    text-align: center;
+}
+
+.card-title {
+    background-color: #27AEFD;
+    padding: 10px 0;
+}
+
+.card-text {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.card_title_sembradores {
+    background-color: #a5df2a;
+}
+/*VENI A SEMBRAR*/
 
 /* BLOG */
 #blog {
@@ -175,10 +269,12 @@ width: 150px;
 .blog-article {
     margin: 2rem;
     /* border: 1px solid red; */
-    background-color: #c8f1ff;
+    background-color: rgb(200, 241, 255);
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 2rem;
+    background-image: url("../img/seeds.jpg");
+    color: white;
 }
 
 
@@ -216,9 +312,7 @@ width: 150px;
 }
 /* BLOG */
 
-
-/* RESPONSIVE */
-
+/* RESPONSIVE */ 
 @media only screen and (max-width: 600px) {
     /* FOOTER */
     #footer {
@@ -242,6 +336,4 @@ width: 150px;
     }
     /* /BLOG */
 }
-
-
 /* /RESPONSIVE */
