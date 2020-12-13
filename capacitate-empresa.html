@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Semillero Digital | ONG de capacitación digital a jóvenes en situación de
-      pobreza
+      Semillero Digital | Detalles y programas de estudio de nuestros cursos destinados a pymes.
     </title>
 
     <!-- META DESCRIPTION -->
     <meta
       name="description"
       content="Semillero Digital es una comunidad de profesionales voluntarios que brinda un programa 
-      de capacitaciones en oficios digitales y mentoreo laboral a jóvenes en situación de pobreza económica."
+      de capacitaciones en oficios digitales y mentoreo laboral a jóvenes en situación de pobreza."
     />
     <meta
       name="keywords"
@@ -103,11 +102,9 @@
       src="https://kit.fontawesome.com/25527e7843.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -118,13 +115,14 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script defer type="module" src="js/main.js"></script>
     <!-- /JS -->
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <nav id="header" class="navbar navbar-expand-lg navbar-dark">
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark"">
         <a class="navbar-brand" href="index.html">
           <img
             src="img/logoSemilleroDigital.png"
@@ -146,36 +144,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">¿Quiénes somos?</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quienes-somos.html">¿Quiénes somos? </a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Capacitate en Semillero
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Capacitate en Semillero
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="capacitate-personas.html"
-                  >Personas</a
-                >
-                <a class="dropdown-item" href="capacitate-empresas.html"
-                  >Empresas</a
-                >
+                  <a class="dropdown-item" href="capacitate-persona.html">Personas</a>
+                  <a class="dropdown-item" href="capacitate-empresa.html">Empresas</a>
               </div>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="veni-a-sembrar.html">Vení a sembrar</a>
+              <a class="nav-link" href="equipo.html">Vení a sembrar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Blog</a>
@@ -189,58 +171,65 @@
     </header>
     <!-- /Header -->
 
-    <main class="container-fluid p-0 nosotros">
-      <div class="row m-4">
-        <div class="col-sm-12 col-md-8 col-lg-7 p-1 nosotros__textos">
-          <h1 id="quienes-somos">¿Quiénes somos?</h1>
-          <p>
-            Una comunidad de profesionales voluntarios que brinda un programa de
-            capacitaciones en oficios digitales y mentoreo laboral, a jóvenes en
-            situación de pobreza económica.
-          </p>
+    <main class="container-fluid">
+        <div id='capacitateEmpresa' class="row">
+            <div class="col cursos__titulo">
+                <h1>Nuestros Cursos</h1>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-5 p-1">
-          <img
-            src="img/voluntarios.png"
-            alt="Quienes somos en Semillero"
-            class="nosotros__imagen img-fluid"
-          />
-        </div>
-      </div>
     </main>
 
-    <section class="container-fluid p-0 queHacemos">
-      <div class="row queHacemos__textos">
-        <div class="col">
-          <h2>¿Qué hacemos?</h2>
-          <p>Generamos un Algoritmo que conecta, integra y potencia.</p>
-        </div>
+    <section class="container-fluid">
+      <div class="row">
+          <div class="col cursos__titulo">
+              <h3>Testimonios de Estudiantes</h3>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-3 m-auto testimonios__imagenes"><img src="img/capacitate-sole.jpg" alt="Testimonio Sole"></div>
+          <div class="col-3 m-auto testimonios__imagenes"><img src="img/capacitate-mailen.jpg" alt="Testimonio Mailen"></div>
+          <div class="col-3 m-auto testimonios__imagenes"><img src="img/capacitate-juan.jpg" alt="Testimonio Juan"></div>
       </div>
     </section>
 
-    <section class="container-fluid p-0 objetivo">
-      <div class="row m-4">
-        <div class="col-sm-12 col-md-4 col-lg-5 p-1">
-          <img
-            src="img/voluntarios.png"
-            alt="Quienes somos en Semillero"
-            class="objetivo__imagen img-fluid"
-          />
-        </div>
+    <div class="container-fluid p-0 m-0">
+      <section class="row row__molesta">
+          <div class="col-lg-8 col__card">
 
-        <div class="col-sm-12 col-md-8 col-lg-7 p-1 objetivo__textos">
-          <h1>Objetivo</h1>
-          <p>
-            <strong>POTENCIAR</strong> personas,
-            <strong>CONECTAR</strong> caminos e
-            <strong>INTEGRAR</strong> Tenemos como objetivo principal aportar
-            crecimiento, valor y una realidad diferente. Logrando así, que los
-            estudiantes desarrollen conocimientos para poder insertarse en el
-            ámbito laboral
-          </p>
-        </div>
-      </div>
-    </section>
+              <div class="card" id="headingOne">
+                  <div class="card-header card__header">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne">
+                              Quiero estudiar en Semillero
+                          </button>
+                      </h5>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body card__body__form">
+                          Queres capacitarte en el área digital y no tenes los recursos para pagar un curso de
+                          calidad, en SD te acompañamos en el aprendizaje para que puedas ampliar tu empleabilidad
+                          o potenciar tu emprendimiento. CUPOS LIMITADOS PARA ADULTOS JÓVENES QUE REALMENTE LO
+                          NECESITEN.<br>
+                          REQUISITOS:<br>
+                          -Cursar ultimo año de colegio secundario o haberlo terminado<br>
+                          -Tener entre 18 y 35 años<br>
+                          -Dificultades económicas p/pagar un curso de esta calidad.<br>
+                          <form>
+                              <div class="form-group boton__form__lugar">
+                                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScspsW-0F4c7c1MpbrS-iW-i2tFzSopk0RerTuWKIJSl5r0FQ/viewform"
+                                      type="button" class="boton__form__estudio">Inscribite</a>
+                              </div>
+                          </form>
+
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </section>
+    </div>
 
     <footer id="footer">
       <p>© Derechos Reservados a Semillero Digital 🌱</p>

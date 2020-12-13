@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semillero Digital | Sección de blog y noticias periodísticas</title>
+    <title>
+      Semillero Digital | ONG de capacitación digital a jóvenes en situación de
+      pobreza.
+    </title>
 
     <!-- META DESCRIPTION -->
     <meta
       name="description"
       content="Semillero Digital es una comunidad de profesionales voluntarios que brinda un programa 
-      de capacitaciones en oficios digitales y mentoreo laboral a jóvenes en situación de pobreza económica."
+      de capacitaciones en oficios digitales y mentoreo laboral a jóvenes en situación de pobreza."
     />
     <meta
       name="keywords"
@@ -100,11 +103,9 @@
       src="https://kit.fontawesome.com/25527e7843.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -115,127 +116,71 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer type="module" src="js/main.js"></script>
     <!-- /JS -->
   </head>
 
   <body>
-     <!-- Header -->
-     <header>
+    <!-- Header -->
+    <header>
       <nav id="header" class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="index.html">
-              <img src="img/logoSemilleroDigital.png" alt="Semillero Digital logo" />
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon "></span>
-          </button>
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/logoSemilleroDigital.png"
+            alt="Semillero Digital logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="quienes-somos.html">¿Quiénes somos? </a>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Capacitate en Semillero
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="capacitate-personas.html">Personas</a>
-                          <a class="dropdown-item" href="capacitate-empresas.html">Empresas</a>
-                      </div>
-                  </li>
-
-                  <li class="nav-item">
-                      <a class="nav-link" href="veni-a-sembrar.html">Vení a sembrar</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-              </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Capacitate en Semillero
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="capacitate-persona.html">Personas</a>
+                  <a class="dropdown-item" href="capacitate-empresa.html">Empresas</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Vení a sembrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-  </header>
-  <!-- /Header -->
-
+    </header>
+    <!-- /Header -->
+    
+    <!-- SECTION -->
     <!-- SECTION -->
     <div id="blog-title">
       <h2>SEMILLERO EN LOS MEDIOS</h2>
     </div>
     <section id="blog">
-      <article class="blog-article orange">
-        <h3 class="blog-article-title">Semillero en La Nación</h3>
-        <h4 class="blog-article-subtitle">
-          Semillero digital: profesionales de la informática capacitan a jóvenes
-          de barrios vulnerables
-        </h4>
-        <p class="blog-article-text">
-          Durante la pandemia creció la oferta y la demanda de este tipo de
-          iniciativas: el encierro y la necesidad de buscar alternativas
-          laborales juntó a facilitadores y jóvenes en cursos prácticos de
-          marketing digital y comercio electrónico
-        </p>
-        <a
-          title="Leer nota completa en La Nación"
-          target="_blank"
-          class="blog-article-btn"
-          href="https://www.lanacion.com.ar/tecnologia/semillero-digital-profesionales-informatica-capacitan-jovenes-barrios-nid2464906/"
-          >Ver más</a
-        >
-      </article>
-      <article class="blog-article blue">
-        <h3 class="blog-article-title">Semillero en Infobae</h3>
-        <h4 class="blog-article-subtitle">
-          Los oficios digitales más buscados del mercado laboral y la
-          oportunidad de la Argentina
-        </h4>
-        <p class="blog-article-text">
-          Son nuevas posiciones que demandan las empresas y que surgen de la
-          transformación digital. Se relacionan con la administración y atención
-          del comercio electrónico, las redes sociales, el desarrollo web y la
-          publicidad digital.
-        </p>
-        <a
-          title="Leer nota completa en Infobae"
-          target="_blank"
-          class="blog-article-btn"
-          href="https://www.infobae.com/tecno/2020/10/24/los-oficios-digitales-mas-buscados-del-mercado-laboral-y-la-oportunidad-de-la-argentina/"
-          >Ver más</a
-        >
-      </article>
-      <article class="blog-article green">
-        <h3 class="blog-article-title">Semillero en Radio Congo</h3>
-        <h4 class="blog-article-subtitle">
-          Podcast en "Las promesas de Elon" , Radio Congo FM | T03E19: Aprendé
-          un oficio digital
-        </h4>
-        <p class="blog-article-text">
-          Semillero Digital es una iniciativa para capacitar en oficios
-          digitales a jóvenes de entre 18 y 35 años, de Barrio 31, Apache o
-          Soldati. ¿Qué es un oficio digital? ¿Por qué es la puerta al trabajo?
-          Igualdad de oportunidades y el súper poder: tu tiempo. Entrevista con
-          Demian Niedfeld, creador del proyecto.
-        </p>
-        <a
-          class="blog-article-btn"
-          title="Escuchar Podcast completo en Spotify"
-          target="_blank"
-          href="https://open.spotify.com/episode/25jMGlR8yOcbWT3T7o00Ge"
-          >Escuchar</a
-        >
-      </article>
     </section>
     <!-- /SECTION -->
 
-    <!-- FOOTER -->
     <footer id="footer">
       <p>© Derechos Reservados a Semillero Digital 🌱</p>
       <ul>
@@ -282,6 +227,5 @@
         </li>
       </ul>
     </footer>
-    <!-- /FOOTER -->
   </body>
 </html>
